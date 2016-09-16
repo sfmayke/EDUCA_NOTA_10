@@ -1,6 +1,6 @@
 angular.module('app.controllers', [])
 
-.service('sharedProperties', function() {
+    .service('sharedProperties', function() {
     var objectValue = { nome: ''};
     
     return {
@@ -46,7 +46,6 @@ function ($scope, $stateParams) {
 function ($scope, $stateParams) {
 
 }])
-         
 .controller('informaEsCtrl', ['$scope', '$stateParams', 'sharedProperties',
 function ($scope, $stateParams, sharedProperties) {
   $scope.escolaObj = sharedProperties.getObject();
