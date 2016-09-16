@@ -1,0 +1,24 @@
+<ion-view title="Educa  Nota 10!" id="page2">
+    <ion-content ng-controller="educaNota10Ctrl" padding="true" class="has-header">
+        <form id="educaNota10-form8" class="list">
+
+            <div class="bar bar-header item-input-inset">
+                <label class="item-input-wrapper">
+                    <i class="icon ion-ios-search placeholder-icon"></i>
+                    <input  ng-model="searchBox" type="search" placeholder="Digite o nome da escola">
+                </label>
+            </div>
+            <ion-list class="list-header list-borderless">
+                <ion-item ng-click="setEscola(newValue)" class="list-item"  ng-repeat="escola in escolas | filter: searchBox track by $index" ng-href="/#/page1/infoPage">
+                    <P>{{testeAlteracao}}</P>    
+                </ion-item>
+            </ion-list>
+            <ion-infinite-scroll
+                on-infinite="loadMore()"
+                distance="1%" 
+            >
+            </ion-infinite-scroll>
+        </form>
+    </ion-content>
+</ion-view>
+
