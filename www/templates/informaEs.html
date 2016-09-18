@@ -1,20 +1,70 @@
 <ion-view title="Informações" id="page8">
     <ion-content padding="true" class="has-header">
+        
         <div class="card">
-            <div class="item item-divider">
-                Nome: {{escolaObj}}
+            <div class="row">
+            <div class="col" style="text-align: center">
+                <p><b>{{escola.nome}}</b></p>
+            </div>
+        </div>
+            <div class="item-input-inset">
+                <div class="col col-27"  style="text-align: right">
+                    <b>Rede:</b>
+                </div>
+                <div class="col col-75">
+                    {{escola.rede}}
+                </div>
             </div>
             <div class="item-input-inset">
-                Rede:
+                <div class="col col-27"  style="text-align: right">
+                    <b>Situação:</b>
+                </div>
+                <div class="col col-75">
+                    {{escola.situacaoFuncionamento}}
+                </div>
             </div>
-            <div class="item-input-inset">
-                Situação:
+            <div class="item item-divider" style="text-align: center" >                            
+                <b style="font-size: 14px">ENDEREÇO</b>
             </div>
-            <div class="item-input-inset">                            
-                Endereço:
+            <div class="item-input-inset" >
+                <div class="col col-27"  style="text-align: right"> 
+                    <b>Descrição:</b>
+                </div>
+                <div class="col col-75">
+                    {{escola.endereco.descricao}}
+                </div>
             </div>
-            <div class="item-input-inset">
-                IDEB:                        
+            <div class="item-input-inset" >       
+                <div class="col col-27"  style="text-align: right">            
+                    <b>CEP:</b>
+                </div>
+                <div class="col col-75">
+                    {{escola.endereco.cep}}
+                </div>               
+            </div>
+            <div class="item-input-inset" >
+                <div class="col col-27"  style="text-align: right">  
+                    <b>Bairro:</b>
+                </div>
+                <div class="col col-75">
+                    {{escola.endereco.bairro}}
+                </div>
+            </div>                
+            <div class="item-input-inset" >
+                <div class="col col-27"  style="text-align: right">   
+                    <b>Município:</b>
+                </div>
+                <div class="col col-75">
+                    {{escola.endereco.municipio}}
+                </div>
+            </div>             
+            <div class="item-input-inset" >
+               <div class="col col-27"  style="text-align: right">        
+                    <b>Estado:</b>
+                </div> 
+                <div class="col col-75">
+                    {{escola.endereco.uf}}
+                </div>           
             </div>
         </div>
     </ion-content>

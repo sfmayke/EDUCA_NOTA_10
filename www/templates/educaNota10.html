@@ -9,8 +9,8 @@
                 </label>
             </div>
             <ion-list class="list-header list-borderless">
-                <ion-item ng-click="setEscola(newValue)" class="list-item"  ng-repeat="escola in escolas | filter: searchBox track by $index" ng-href="/#/page1/infoPage">
-                    <P>{{testeAlteracao}}</P>    
+                <ion-item  class="list-item"  ng-repeat="escola in escolas | filter: searchBox track by $index" ng-click="cliked(escola)" ng-href="/#/page1/infoPage">
+                    <P>{{escola.nome}}</P>    
                 </ion-item>
             </ion-list>
             <ion-infinite-scroll
