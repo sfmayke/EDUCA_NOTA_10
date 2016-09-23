@@ -23,8 +23,8 @@
                     {{escola.situacaoFuncionamento}}
                 </div>
             </div>
-            <div class="item item-divider" style="text-align: center" >                            
-                <b style="font-size: 14px">ENDEREÇO</b>
+            <div style="text-align: center" >                            
+                <b>ENDEREÇO</b>
             </div>
             <div class="item-input-inset" >
                 <div class="col col-27"  style="text-align: right"> 
@@ -55,17 +55,17 @@
                     <b>Município:</b>
                 </div>
                 <div class="col col-75">
-                    {{escola.endereco.municipio}}
+                    {{escola.endereco.municipio}}({{escola.endereco.uf}})
                 </div>
             </div>             
-            <div class="item-input-inset" >
+            <!--<div class="item-input-inset" >
                <div class="col col-27"  style="text-align: right">        
                     <b>Estado:</b>
                 </div> 
                 <div class="col col-75">
                     {{escola.endereco.uf}}
                 </div>           
-            </div>
+            </div>-->
         </div>
     </ion-content>
 </ion-view>

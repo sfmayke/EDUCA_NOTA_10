@@ -70,6 +70,16 @@ function ($scope, $stateParams, escolaPropriedades)
     $scope.$on('$ionicView.beforeEnter', function () 
     {
         $scope.escola = escolaPropriedades.getObject();
+
+        $scope.escola.endereco.municipio = $scope.escola.endereco.municipio.toUpperCase();
+        $scope.escola.rede = $scope.escola.rede.toUpperCase(); 
+        $scope.escola.situacaoFuncionamento =$scope.escola.situacaoFuncionamento.toUpperCase(); 
+
+        if(!$scope.escola.endereco.bairro)
+        {
+            $scope.escola.endereco.bairro = "NÃO CADASTRADO.";
+        }
+        
     });
 }])
    
